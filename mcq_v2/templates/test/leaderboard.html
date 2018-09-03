@@ -58,11 +58,27 @@
                       <th>Name</th>
                       <th>Year</th>
                       <th>Branch</th>
-                      <th>Rank</th>
+                      <th>Points</th>
                    </tr>
                  </thead>
                  <tbody>
-                   <tr> 
+
+
+                  {% for obj in object %}
+                    <tr>
+                      <th scope="row">{{forloop.counter}}</th>
+                      <td>{{obj.user.profile_set.all.first.name}}</td>
+                      <td>{{obj.user.profile_set.all.first.year}}</td>
+                      <td>{{obj.user.profile_set.all.first.branch}}</td>
+                      <td>{{obj.points}}</td>
+                    </tr>
+                  {% endfor %}
+
+
+
+
+
+                   <!-- <tr> 
                       <th scope="row">1</th>
                       <td>Mark</td>
                       <td>2</td>
@@ -103,7 +119,7 @@
                       <td>1</td>
                       <td>EC</td>
                       <td>3</td>
-                   </tr>
+                   </tr> -->
                  </tbody>
                </table>
            </div>

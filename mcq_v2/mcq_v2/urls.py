@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import index,login_view,signup,instruction,dashboard,leaderboard,logout_view
+from .views import index,login_view,signup,instruction,dashboard,leaderboard,logout_view,result
 
 
 
@@ -28,4 +28,5 @@ urlpatterns = [
     path('instruction/',instruction),
     path('dashboard/',dashboard),
     path('leaderboard/',leaderboard),
+    path('result/',result)
 ]

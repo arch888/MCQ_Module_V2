@@ -13,6 +13,14 @@
     <link href="{% static 'assets/css/mdb.min.css' %}" rel="stylesheet">
     <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet">
     <link href="{% static 'assets/css/dashboard.css' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'assets/js/dashboard.js' %}">
+      
+
+
+
+
+    </script>
+
 </head>
 
 <body class="fixed-sn animated fadeIn">
@@ -39,110 +47,83 @@
           <div class="panel panel-body" id="border">
              <div class="row">
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="oneD">1</button>
+                 <button type="button" id="b1" onclick="showq1(true)" style="border: 1.5px solid #FF1744;
+color: #FF1744;">1</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="oneD">2</button>
+                 <button type="button" id="b2" onclick="showq2(true)">2</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="oneD">3</button>
+                 <button type="button" id="b3" onclick="showq3(true)">3</button>
                </div>
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="oneD">4</button>
+                 <button type="button" id="b4" onclick="showq4(true)">4</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="oneD">5</button>
+                 <button type="button" id="b5" onclick="showq5(true)">5</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="oneD">6</button>
+                 <button type="button" id="b6" onclick="showq6(true)">6</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="oneD">7</button>
+                 <button type="button" id="b7" onclick="showq7(true)">7</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="oneD">8</button>
+                 <button type="button" id="b8" onclick="showq8(true)">8</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="oneD">9</button>
+                 <button type="button" id="b9" onclick="showq9(true)">9</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">10</button>
+                 <button type="button" id="b10" onclick="showq10(true)">10</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">11</button>
+                 <button type="button" id="b11" onclick="showq11(true)">11</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">12</button>
+                 <button type="button" id="b12" onclick="showq12(true)">12</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">13</button>
+                 <button type="button" id="b13" onclick="showq13(true)">13</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">14</button>
+                 <button type="button" id="b14" onclick="showq14(true)">14</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">15</button>
+                 <button type="button" id="b15" onclick="showq15(true)">15</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">16</button>
+                 <button type="button" id="b16" onclick="showq16(true)">16</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">17</button>
+                 <button type="button" id="b17" onclick="showq17(true)">17</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">18</button>
+                 <button type="button" id="b18" onclick="showq18(true)">18</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">19</button>
+                 <button type="button" id="b19" onclick="showq19(true)">19</button>
                </div>
 
                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">20</button>
-               </div>
-
-               <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">21</button>
-               </div>
-
-               <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">22</button>
-               </div>
-
-               <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">23</button>
-               </div>
-
-               <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">24</button>
-               </div>
-
-                <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">25</button>
-               </div>
-
-               <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">26</button>
-               </div>
-
-               <div class="col-lg-4 col-4 col-md-6">
-                 <button type="button" id="twoD">27</button>
+                 <button type="button" id="b20" onclick="showq20(true)">20</button>
                </div>
              </div>    
           </div>
@@ -167,37 +148,41 @@
              <hr>
              <p>{{question1.desc}}
              </p><br>
-             
-             <ul id="listOptions">
-               <li id="option">
+             <ul id="listOptions1">
+             <li id="option1">
                  <input type="radio" id="f-option" name="qus1" value="1">
                  <label for="f-option">{{question1.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
+               <li id="option1">
                  <input type="radio" id="s-option" name="qus1" value="2">
                  <label for="s-option">{{question1.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
+               <li id="option1">
                 <input type="radio" id="t-option" name="qus1" value="3">
                 <label for="t-option">{{question1.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
+               <li id="option1">
                  <input type="radio" id="u-option" name="qus1" value="4">
                  <label for="u-option">{{question1.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
-            </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+             </ul>
+
+
+            <!-- <button onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></button> -->
+              <!-- <input type="button" onclick="showq2();" value="Next"> -->
+
+            <a onclick="showq2(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -213,41 +198,41 @@
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question2.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question2.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
+             <ul id="listOptions2">
+               <li id="option2">
                  <input type="radio" id="f-option" name="qus2" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+                 <label for="f-option">{{question2.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
+               <li id="option2">
                  <input type="radio" id="s-option" name="qus2" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+                 <label for="s-option">{{question2.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
+               <li id="option2">
                 <input type="radio" id="t-option" name="qus2" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+                <label for="t-option">{{question2.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
+               <li id="option2">
                  <input type="radio" id="u-option" name="qus2" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+                 <label for="u-option">{{question2.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq3(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -262,41 +247,41 @@
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question3.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question3.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
+             <ul id="listOptions3">
+               <li id="option3">
                  <input type="radio" id="f-option" name="qus3" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+                 <label for="f-option">{{question3.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
+               <li id="option3">
                  <input type="radio" id="s-option" name="qus3" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+                 <label for="s-option">{{question3.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
+               <li id="option3">
                 <input type="radio" id="t-option" name="qus3" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+                <label for="t-option">{{question3.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
+               <li id="option3">
                  <input type="radio" id="u-option" name="qus3" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+                 <label for="u-option">{{question3.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq4(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -315,134 +300,135 @@
              <p>{{question4.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
+             <ul id="listOptions4">
+               <li id="option4">
                  <input type="radio" id="f-option" name="qus4" value="1">
                  <label for="f-option">{{question4.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
+               <li id="option4">
                  <input type="radio" id="s-option" name="qus4" value="2">
                  <label for="s-option">{{question4.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
+               <li id="option4">
                 <input type="radio" id="t-option" name="qus4" value="3">
                 <label for="t-option">{{question4.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
+               <li id="option4">
                  <input type="radio" id="u-option" name="qus4" value="4">
                  <label for="u-option">{{question4.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq5(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
 
 
 
-
-<!-- Qus 5 -->
-
+      <!-- Qus 5 -->
 
 
-<div id="q1" style="display:none;">
+<div id="q5" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question5.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question5.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions5">
+               <li id="option5">
+                 <input type="radio" id="f-option" name="qus5" value="1">
+                 <label for="f-option">{{question5.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option5">
+                 <input type="radio" id="s-option" name="qus5" value="2">
+                 <label for="s-option">{{question5.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option5">
+                <input type="radio" id="t-option" name="qus5" value="3">
+                <label for="t-option">{{question5.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option5">
+                 <input type="radio" id="u-option" name="qus5" value="4">
+                 <label for="u-option">{{question5.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq6(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
+
+
 
 
 
 <!-- Qus 6 -->
 
 
-<div id="q1" style="display:none;">
+
+<div id="q6" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question6.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question6.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions6">
+               <li id="option6">
+                 <input type="radio" id="f-option" name="qus6" value="1">
+                 <label for="f-option">{{question6.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option6">
+                 <input type="radio" id="s-option" name="qus6" value="2">
+                 <label for="s-option">{{question6.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option6">
+                <input type="radio" id="t-option" name="qus6" value="3">
+                <label for="t-option">{{question6.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option6">
+                 <input type="radio" id="u-option" name="qus6" value="4">
+                 <label for="u-option">{{question6.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq7(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -452,151 +438,148 @@
 <!-- Qus 7 -->
 
 
-
-
-<div id="q1" style="display:none;">
+<div id="q7" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question7.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question7.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions7">
+               <li id="option7">
+                 <input type="radio" id="f-option" name="qus7" value="1">
+                 <label for="f-option">{{question7.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option7">
+                 <input type="radio" id="s-option" name="qus7" value="2">
+                 <label for="s-option">{{question7.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option7">
+                <input type="radio" id="t-option" name="qus7" value="3">
+                <label for="t-option">{{question7.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option7">
+                 <input type="radio" id="u-option" name="qus7" value="4">
+                 <label for="u-option">{{question7.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq8(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
 
 
 
-    <!-- Qus 8 -->
+<!-- Qus 8 -->
 
 
 
 
-    <div id="q1" style="display:none;">
+<div id="q8" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question8.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question8.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions8">
+               <li id="option8">
+                 <input type="radio" id="f-option" name="qus8" value="1">
+                 <label for="f-option">{{question8.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option8">
+                 <input type="radio" id="s-option" name="qus8" value="2">
+                 <label for="s-option">{{question8.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option8">
+                <input type="radio" id="t-option" name="qus8" value="3">
+                <label for="t-option">{{question8.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option8">
+                 <input type="radio" id="u-option" name="qus8" value="4">
+                 <label for="u-option">{{question8.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq9(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
 
 
 
-      <!-- Qus 9 -->
+    <!-- Qus 9 -->
 
 
 
-      <div id="q1" style="display:none;">
+
+    <div id="q9" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question9.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question9.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions9">
+               <li id="option9">
+                 <input type="radio" id="f-option" name="qus9" value="1">
+                 <label for="f-option">{{question9.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option9">
+                 <input type="radio" id="s-option" name="qus9" value="2">
+                 <label for="s-option">{{question9.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option9">
+                <input type="radio" id="t-option" name="qus9" value="3">
+                <label for="t-option">{{question9.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option9">
+                 <input type="radio" id="u-option" name="qus9" value="4">
+                 <label for="u-option">{{question9.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq10(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
-
-
 
 
 
@@ -604,48 +587,49 @@
 
 
 
-      <div id="q1" style="display:none;">
+      <div id="q10" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question10.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question10.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions10">
+               <li id="option10">
+                 <input type="radio" id="f-option" name="qus10" value="1">
+                 <label for="f-option">{{question10.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option10">
+                 <input type="radio" id="s-option" name="qus10" value="2">
+                 <label for="s-option">{{question10.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option10">
+                <input type="radio" id="t-option" name="qus10" value="3">
+                <label for="t-option">{{question10.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option10">
+                 <input type="radio" id="u-option" name="qus10" value="4">
+                 <label for="u-option">{{question10.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq11(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
+
 
 
 
@@ -654,46 +638,45 @@
 
 
 
-
-      <div id="q1" style="display:none;">
+      <div id="q11" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question11.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question11.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions11">
+               <li id="option11">
+                 <input type="radio" id="f-option" name="qus11" value="1">
+                 <label for="f-option">{{question11.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option11">
+                 <input type="radio" id="s-option" name="qus11" value="2">
+                 <label for="s-option">{{question11.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option11">
+                <input type="radio" id="t-option" name="qus11" value="3">
+                <label for="t-option">{{question11.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option11">
+                 <input type="radio" id="u-option" name="qus11" value="4">
+                 <label for="u-option">{{question11.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq12(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -706,48 +689,49 @@
 
 
 
-      <div id="q1" style="display:none;">
+      <div id="q12" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question12.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question12.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions12">
+               <li id="option12">
+                 <input type="radio" id="f-option" name="qus12" value="1">
+                 <label for="f-option">{{question12.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option12">
+                 <input type="radio" id="s-option" name="qus12" value="2">
+                 <label for="s-option">{{question12.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option12">
+                <input type="radio" id="t-option" name="qus12" value="3">
+                <label for="t-option">{{question12.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option12">
+                 <input type="radio" id="u-option" name="qus12" value="4">
+                 <label for="u-option">{{question12.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq13(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
+
 
 
 
@@ -755,45 +739,95 @@
 
 
 
-      <div id="q1" style="display:none;">
+
+      <div id="q13" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question13.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question13.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions13">
+               <li id="option13">
+                 <input type="radio" id="f-option" name="qus13" value="1">
+                 <label for="f-option">{{question13.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option13">
+                 <input type="radio" id="s-option" name="qus13" value="2">
+                 <label for="s-option">{{question13.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option13">
+                <input type="radio" id="t-option" name="qus13" value="3">
+                <label for="t-option">{{question13.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option13">
+                 <input type="radio" id="u-option" name="qus13" value="4">
+                 <label for="u-option">{{question13.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq14(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Qus 14 -->
+
+
+
+      <div id="q14" style="display:none;">
+
+        <div class="panel">
+          <div class="panel panel-body">
+             <h3>{{question14.title}}</h3>
+             <hr>
+             <p>{{question14.desc}}
+             </p><br>
+             
+             <ul id="listOptions14">
+               <li id="option14">
+                 <input type="radio" id="f-option" name="qus14" value="1">
+                 <label for="f-option">{{question14.option_1}}</label>
+    
+                 <div class="check"></div>
+               </li>
+  
+               <li id="option14">
+                 <input type="radio" id="s-option" name="qus14" value="2">
+                 <label for="s-option">{{question14.option_2}}</label>
+    
+                 <div class="check"><div class="inside"></div></div>
+               </li>
+  
+               <li id="option14">
+                <input type="radio" id="t-option" name="qus14" value="3">
+                <label for="t-option">{{question14.option_3}}</label>
+    
+                <div class="check"><div class="inside"></div></div>
+               </li>
+         
+               <li id="option14">
+                 <input type="radio" id="u-option" name="qus14" value="4">
+                 <label for="u-option">{{question14.option_4}}</label>
+    
+                 <div class="check"><div class="inside"></div></div>
+               </li>
+            </ul>
+            <a onclick="showq15(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -805,45 +839,45 @@
 
 
 
-      <div id="q1" style="display:none;">
+      <div id="q15" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question15.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question15.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions15">
+               <li id="option15">
+                 <input type="radio" id="f-option" name="qus15" value="1">
+                 <label for="f-option">{{question15.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option15">
+                 <input type="radio" id="s-option" name="qus15" value="2">
+                 <label for="s-option">{{question15.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option15">
+                <input type="radio" id="t-option" name="qus15" value="3">
+                <label for="t-option">{{question15.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option15">
+                 <input type="radio" id="u-option" name="qus15" value="4">
+                 <label for="u-option">{{question15.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq16(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -855,45 +889,45 @@
 
 
 
-      <div id="q1" style="display:none;">
+      <div id="q16" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question16.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question16.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions16">
+               <li id="option16">
+                 <input type="radio" id="f-option" name="qus16" value="1">
+                 <label for="f-option">{{question16.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option16">
+                 <input type="radio" id="s-option" name="qus16" value="2">
+                 <label for="s-option">{{question16.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option16">
+                <input type="radio" id="t-option" name="qus16" value="3">
+                <label for="t-option">{{question16.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option16">
+                 <input type="radio" id="u-option" name="qus16" value="4">
+                 <label for="u-option">{{question16.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq17(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -904,45 +938,45 @@
 
 
 
-      <div id="q1" style="display:none;">
+      <div id="q17" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question17.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question17.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions17">
+               <li id="option17">
+                 <input type="radio" id="f-option" name="qus17" value="1">
+                 <label for="f-option">{{question17.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option17">
+                 <input type="radio" id="s-option" name="qus17" value="2">
+                 <label for="s-option">{{question17.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option17">
+                <input type="radio" id="t-option" name="qus17" value="3">
+                <label for="t-option">{{question17.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option17">
+                 <input type="radio" id="u-option" name="qus17" value="4">
+                 <label for="u-option">{{question17.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq18(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -954,45 +988,45 @@
 
 
 
-      <div id="q1" style="display:none;">
+      <div id="q18" style="display:none;">
 
         <div class="panel">
           <div class="panel panel-body">
-             <h3>{{question1.title}}</h3>
+             <h3>{{question18.title}}</h3>
              <hr>
-             <p>{{question1.desc}}
+             <p>{{question18.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
-                 <input type="radio" id="f-option" name="qus1" value="1">
-                 <label for="f-option">{{question1.option_1}}</label>
+             <ul id="listOptions18">
+               <li id="option18">
+                 <input type="radio" id="f-option" name="qus18" value="1">
+                 <label for="f-option">{{question18.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
-                 <input type="radio" id="s-option" name="qus1" value="2">
-                 <label for="s-option">{{question1.option_2}}</label>
+               <li id="option18">
+                 <input type="radio" id="s-option" name="qus18" value="2">
+                 <label for="s-option">{{question18.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
-                <input type="radio" id="t-option" name="qus1" value="3">
-                <label for="t-option">{{question1.option_3}}</label>
+               <li id="option18">
+                <input type="radio" id="t-option" name="qus18" value="3">
+                <label for="t-option">{{question18.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
-                 <input type="radio" id="u-option" name="qus1" value="4">
-                 <label for="u-option">{{question1.option_4}}</label>
+               <li id="option18">
+                 <input type="radio" id="u-option" name="qus18" value="4">
+                 <label for="u-option">{{question18.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq2()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq19(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -1012,36 +1046,36 @@
              <p>{{question19.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
+             <ul id="listOptions19">
+               <li id="option19">
                  <input type="radio" id="f-option" name="qus19" value="1">
                  <label for="f-option">{{question19.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
+               <li id="option19">
                  <input type="radio" id="s-option" name="qus19" value="2">
                  <label for="s-option">{{question19.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
+               <li id="option19">
                 <input type="radio" id="t-option" name="qus19" value="3">
                 <label for="t-option">{{question19.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
+               <li id="option19">
                  <input type="radio" id="u-option" name="qus19" value="4">
                  <label for="u-option">{{question19.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq20()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
+            <a onclick="showq20(false)" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -1061,36 +1095,35 @@
              <p>{{question20.desc}}
              </p><br>
              
-             <ul id="listOptions">
-               <li id="option">
+             <ul id="listOptions20">
+               <li id="option20">
                  <input type="radio" id="f-option" name="qus20" value="1">
                  <label for="f-option">{{question20.option_1}}</label>
     
                  <div class="check"></div>
                </li>
   
-               <li id="option">
+               <li id="option20">
                  <input type="radio" id="s-option" name="qus20" value="2">
                  <label for="s-option">{{question20.option_2}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
   
-               <li id="option">
+               <li id="option20">
                 <input type="radio" id="t-option" name="qus20" value="3">
                 <label for="t-option">{{question20.option_3}}</label>
     
                 <div class="check"><div class="inside"></div></div>
                </li>
          
-               <li id="option">
+               <li id="option20">
                  <input type="radio" id="u-option" name="qus20" value="4">
                  <label for="u-option">{{question20.option_4}}</label>
     
                  <div class="check"><div class="inside"></div></div>
                </li>
             </ul>
-            <a onclick="showq1()" class="next">Next<i style="margin-left: 5px;" class="glyphicon glyphicon-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -1098,6 +1131,8 @@
 
 
 
+
+          <input type="submit" value="End Test">
 
 
 
@@ -1118,6 +1153,11 @@
         </div>
     </footer>
 
+
+
+
+
+    
     <script type="text/javascript" src="{% static 'assets/js/jquery-3.2.1.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/popper.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>

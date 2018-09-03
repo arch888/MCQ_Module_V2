@@ -33,7 +33,17 @@ p#head {
 #border {
     border: 3px solid grey;
 }
-button#oneD{
+button#oneD,
+button#b1,
+button#b2,
+button#b3,
+button#b4,
+button#b5,
+button#b6,
+button#b7,
+button#b8,
+button#b9,
+button#b10{
   padding: 1rem 1.7rem;
   margin: 0.5rem 0.5rem;
   border: 1.5px solid #616161;
@@ -41,7 +51,17 @@ button#oneD{
   background-color: transparent;
   border-radius: 50%;
 }
-button#twoD{
+button#twoD,
+button#b11,
+button#b12,
+button#b13,
+button#b14,
+button#b15,
+button#b16,
+button#b17,
+button#b18,
+button#b19,
+button#b20{
   padding: 1rem 1.4rem;
   outline: none;
   margin: 0.5rem 0.5rem;
@@ -49,7 +69,48 @@ button#twoD{
   background-color: transparent;
   border-radius: 50%;
 }
-button#oneD:hover,button#twoD:hover,button#oneD:focus,button#twoD:focus{
+button#oneD:hover,
+button#oneD:focus,
+button#b1:hover,
+button#b1:focus,
+button#b2:hover,
+button#b2:focus,
+button#b3:hover,
+button#b3:focus,
+button#b4:hover,
+button#b4:focus,
+button#b5:hover,
+button#b5:focus,
+button#b6:hover,
+button#b6:focus,
+button#b7:hover,
+button#b7:focus,
+button#b8:hover,
+button#b8:focus,
+button#b9:hover,
+button#b9:focus,
+button#b10:hover,
+button#b10:focus,
+button#b11:hover,
+button#b11:focus,
+button#b12:hover,
+button#b12:focus,
+button#b13:hover,
+button#b13:focus,
+button#b14:hover,
+button#b14:focus,
+button#b15:hover,
+button#b15:focus,
+button#b16:hover,
+button#b16:focus,
+button#b17:hover,
+button#b17:focus,
+button#b18:hover,
+button#b18:focus,
+button#b19:hover,
+button#b19:focus,
+button#b20:hover,
+button#b20:focus{
    border: 1.5px solid #FF1744;
    color: #FF1744;
 }
@@ -92,11 +153,11 @@ hr{
   border: none; 
   border-radius: 10px;  
 }
-ul#listOptions{
+ul#listOptions,ul#listOptions1,ul#listOptions2,ul#listOptions3,ul#listOptions4,ul#listOptions5,ul#listOptions6,ul#listOptions7,ul#listOptions8,ul#listOptions9,ul#listOptions10,ul#listOptions11,ul#listOptions12,ul#listOptions13,ul#listOptions14,ul#listOptions15,ul#listOptions16,ul#listOptions17,ul#listOptions18,ul#listOptions19,ul#listOptions20{
   margin-top: -2rem;
   margin-left: -2rem;
 }
-ul#listOptions li#option{
+ul#listOptions li#option,ul#listOptions1 li#option,ul#listOptions2 li#option,ul#listOptions3 li#option,ul#listOptions4 li#option,ul#listOptions5 li#option,ul#listOptions6 li#option,ul#listOptions7 li#option,ul#listOptions8 li#option,ul#listOptions9 li#option,ul#listOptions10 li#option,ul#listOptions11 li#option,ul#listOptions12 li#option,ul#listOptions13 li#option,ul#listOptions14 li#option,ul#listOptions15 li#option,ul#listOptions16 li#option,ul#listOptions17 li#option,ul#listOptions18 li#option,ul#listOptions19 li#option,ul#listOptions20 li#option{
   color: grey;
   display: block;
   position: relative;
@@ -105,12 +166,12 @@ ul#listOptions li#option{
   width: 100%;
   height: 50px;
 }
-ul#listOptions li#option input[type=radio]{
+ul#listOptions li#option input[type=radio],ul#listOptions1 li#option input[type=radio],ul#listOptions li#option input[type=radio],ul#listOptions3 li#option input[type=radio],ul#listOptions4 li#option input[type=radio],ul#listOptions5 li#option input[type=radio],ul#listOptions6 li#option input[type=radio],ul#listOptions7 li#option input[type=radio],ul#listOptions8 li#option input[type=radio],ul#listOptions9 li#option input[type=radio],ul#listOptions10 li#option input[type=radio],ul#listOptions11 li#option input[type=radio],ul#listOptions12 li#option input[type=radio],ul#listOptions13 li#option input[type=radio],ul#listOptions14 li#option input[type=radio],ul#listOptions15 li#option input[type=radio],ul#listOptions16 li#option input[type=radio],ul#listOptions17 li#option input[type=radio],ul#listOptions18 li#option input[type=radio],ul#listOptions19 li#option input[type=radio],ul#listOptions20 li#option input[type=radio]{
   position: absolute;
   visibility: hidden;
 }
 
-ul#listOptions li#option label{
+ul#listOptions li#option label,ul#listOptions1 li#option label,ul#listOptions2 li#option label,ul#listOptions3 li#option label,ul#listOptions4 li#option label,ul#listOptions5 li#option label,ul#listOptions6 li#option label,ul#listOptions7 li#option label,ul#listOptions8 li#option label,ul#listOptions9 li#option label,ul#listOptions10 li#option label,ul#listOptions11 li#option label,ul#listOptions12 li#option label,ul#listOptions13 li#option label,ul#listOptions14 li#option label,ul#listOptions15 li#option label,ul#listOptions16 li#option label,ul#listOptions17 li#option label,ul#listOptions18 li#option label,ul#listOptions19 li#option label,ul#listOptions20 li#option label{
   display: block;
   position: relative;
   font-weight: 300;
@@ -123,10 +184,10 @@ ul#listOptions li#option label{
   -webkit-transition: all 0.25s linear;
 }
 
-ul#listOptions li#option:hover label{
+ul#listOptions li#option:hover label,ul#listOptions1 li#option:hover label,ul#listOptions2 li#option:hover label,ul#listOptions3 li#option:hover label,ul#listOptions4 li#option:hover label,ul#listOptions5 li#option:hover label,ul#listOptions6 li#option:hover label,ul#listOptions7 li#option:hover label,ul#listOptions8 li#option:hover label,ul#listOptions9 li#option:hover label,ul#listOptions10 li#option:hover label,ul#listOptions11 li#option:hover label,ul#listOptions12 li#option:hover label,ul#listOptions13 li#option:hover label,ul#listOptions14 li#option:hover label,ul#listOptions15 li#option:hover label,ul#listOptions16 li#option:hover label,ul#listOptions17 li#option:hover label,ul#listOptions18 li#option:hover label,ul#listOptions19 li#option:hover label,ul#listOptions20 li#option:hover label{
   color:  #D50000;
 }
-ul#listOptions li#option .check{
+ul#listOptions li#option .check,ul#listOptions1 li#option .check,ul#listOptions2 li#option .check,ul#listOptions3 li#option .check,ul#listOptions4 li#option .check,ul#listOptions5 li#option .check,ul#listOptions6 li#option .check,ul#listOptions7 li#option .check,ul#listOptions8 li#option .check,ul#listOptions9 li#option .check,ul#listOptions10 li#option .check,ul#listOptions11 li#option .check,ul#listOptions12 li#option .check,ul#listOptions13 li#option .check,ul#listOptions14 li#option .check,ul#listOptions15 li#option .check,ul#listOptions16 li#option .check,ul#listOptions17 li#option .check,ul#listOptions18 li#option .check,ul#listOptions19 li#option .check,ul#listOptions20 li#option .check{
   display: block;
   position: absolute;
   border: 4px solid grey;
@@ -139,10 +200,49 @@ ul#listOptions li#option .check{
   transition: border .25s linear;
   -webkit-transition: border .25s linear;
 }
-ul#listOptions li#option:hover .check {
+ul#listOptions li#option:hover .check,
+ul#listOptions1 li#option:hover .check,
+ul#listOptions2 li#option:hover .check,
+ul#listOptions3 li#option:hover .check,
+ul#listOptions4 li#option:hover .check,
+ul#listOptions5 li#option:hover .check,
+ul#listOptions6 li#option:hover .check,
+ul#listOptions7 li#option:hover .check,
+ul#listOptions8 li#option:hover .check,
+ul#listOptions9 li#option:hover .check,
+ul#listOptions10 li#option:hover .check,
+ul#listOptions11 li#option:hover .check,
+ul#listOptions12 li#option:hover .check,
+ul#listOptions13 li#option:hover .check,
+ul#listOptions14 li#option:hover .check,
+ul#listOptions15 li#option:hover .check,
+ul#listOptions16 li#option:hover .check,
+ul#listOptions17 li#option:hover .check,
+ul#listOptions18 li#option:hover .check,
+ul#listOptions19 li#option:hover .check,
+ul#listOptions20 li#option:hover .check {
   border: 4px solid  #D50000;
 }
-ul#listOptions li#option .check::before {
+ul#listOptions1 li#option .check::before,
+ul#listOptions2 li#option .check::before,
+ul#listOptions3 li#option .check::before,
+ul#listOptions4 li#option .check::before,
+ul#listOptions5 li#option .check::before,
+ul#listOptions6 li#option .check::before,
+ul#listOptions7 li#option .check::before,
+ul#listOptions8 li#option .check::before,
+ul#listOptions9 li#option .check::before,
+ul#listOptions10 li#option .check::before,
+ul#listOptions11 li#option .check::before,
+ul#listOptions12 li#option .check::before,
+ul#listOptions13 li#option .check::before,
+ul#listOptions14 li#option .check::before,
+ul#listOptions15 li#option .check::before,
+ul#listOptions16 li#option .check::before,
+ul#listOptions17 li#option .check::before,
+ul#listOptions18 li#option .check::before,
+ul#listOptions19 li#option .check::before,
+ul#listOptions20 li#option .check::before {
   display: block;
   position: absolute;
   content: '';
