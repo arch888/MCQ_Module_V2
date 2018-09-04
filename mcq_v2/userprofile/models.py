@@ -14,6 +14,7 @@ class profile(models.Model):
 	college=models.CharField(max_length=255)
 	year=models.CharField(max_length=255)
 	branch=models.CharField(max_length=255)
+	start_time=models.IntegerField(default=0)
 
 
 

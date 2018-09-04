@@ -131,9 +131,30 @@ color: #FF1744;">1</button>
      </div>
      <div class="col-lg-9 col-md-9 col-12">
 
+<div style="font-weight: bold; margin-left: 700px;" id="quiz-time-left"></div>
 
+<script type="text/javascript">
+  var total_sec=60*{{time}};
+  var c_min=parseInt(total_sec/60);
+  var c_sec=parseInt(total_sec%60);
+  function Checktime(){
+    document.getElementById('quiz-time-left').innerHTML='Time Left - '+c_min+' min '+c_sec+' sec';
+    if (total_sec<=0){
+      setTimeout('document.quiz.submit()',1);
+    }
+    else{
+      total_sec=total_sec-1;
+      c_min=parseInt(total_sec/60);
+      c_sec=parseInt(total_sec%60);
+      setTimeout("Checktime()",500);
+    }
+  }
+  setTimeout("Checktime()",500);
+</script>
 
-<form method="POST">{% csrf_token %}
+<h6 style="float: right;">Please Do not Refresh any Page while in test</h6>
+
+<form method="POST" name="quiz">{% csrf_token %}
       
 
 

@@ -4,6 +4,8 @@ from .forms import signup_form,login_form
 from quiz.models import quizze
 from random import shuffle
 from leaderboard.models import leaderboard as lb
+from django.utils.timezone import datetime
+from userprofile.models import profile
 
 from userprofile.models import profile
 
@@ -29,7 +31,6 @@ def login_view(request):
 			username=form_class.cleaned_data.get("email")
 			password=form_class.cleaned_data.get("password")
 			user = authenticate(username=username, password=password)
-			print(user)
 			if user is not None:
 				login(request,user)
 				return redirect("/instruction")
@@ -103,6 +104,7 @@ def dashboard(request):
 	quiz_object=quizze.objects.filter(title='Recruitment Drive').first()
 	queryset=list(quiz_object.ques.all())
 	#shuffle(queryset)
+	time=quiz_object.time
 	context={
 		"question1":queryset[0],
 		"question2":queryset[1],
@@ -124,9 +126,8 @@ def dashboard(request):
 		"question18":queryset[7],
 		"question19":queryset[8],
 		"question20":queryset[9],
-		"time":quiz_object.time
+		"time":time
 	}
-
 
 	if request.POST:
 		count=0
@@ -214,7 +215,7 @@ def dashboard(request):
 		attempted_qus=20 - attempted_qus
 		correct_qus=count
 		wrong_qus=attempted_qus-count
-		points=(count*4)-(wrong_qus*0.75)
+		points=(count*4)-(wrong_qus)
 		object_1=lb.objects.filter(user=request.user)
 		if points<=20:
 			message="Congrats You have Done well !!"
@@ -237,13 +238,18 @@ def dashboard(request):
 			return redirect('/result')
 		else:
 			return redirect('/')
+	if request.user.profile_set.all().first().start_time==0:
+		obj=profile.objects.get(user=request.user)
+		obj.start_time=1
+		obj.save()
+	else:
+		return render(request,'test/rule_broken.html',{});
 	return render(request,'test/dashboard.html',context)
 
 
 
 def result(request):
 	obj=lb.objects.filter(user=request.user)
-	print(obj.first())
 	if obj.exists():
 		context_2={
 			"cqus":obj.first().correct_qus,
