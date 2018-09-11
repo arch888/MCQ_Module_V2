@@ -243,6 +243,8 @@ def dashboard(request):
 		obj.start_time=1
 		obj.save()
 	else:
+		if request.user.is_authenticated:
+			logout(request)
 		return render(request,'test/rule_broken.html',{});
 	return render(request,'test/dashboard.html',context)
 
@@ -257,4 +259,6 @@ def result(request):
 			"points":obj.first().points,
 			"message":obj.first().message
 		}
+	if request.user.is_authenticated:
+		logout(request)
 	return render(request,'test/result.html',context_2)

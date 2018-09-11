@@ -12,7 +12,7 @@ class profile(models.Model):
 	user=models.ForeignKey(User,on_delete=models.CASCADE)
 	name=models.CharField(max_length=255)
 	college=models.CharField(max_length=255)
-	year=models.CharField(max_length=255)
+	year=models.IntegerField()
 	branch=models.CharField(max_length=255)
 	start_time=models.IntegerField(default=0)
 

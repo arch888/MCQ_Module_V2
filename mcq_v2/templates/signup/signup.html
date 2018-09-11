@@ -50,7 +50,22 @@
                     </div>
                   </div>
 
+                      {% if form.errors %}
+                          {% for field in form %}
+                              {% for error in field.errors %}
+                                  <script type="text/javascript">
+                                    alert("{{error}}");
+                                  </script> 
+                              {% endfor %}
+                          {% endfor %}
+                      {% endif %}
 
+
+                      {% if form.errors %}
+                        <script type="text/javascript">
+                          alert("{{error}}");
+                        </script>
+                      {% endif %}
 
                   {% for field in form %}
                     <div class="md-form">
@@ -75,8 +90,12 @@
                       {% if field.label in 'Confirm password' %}
                        <i class="fa fa-lock prefix grey-text"></i>
                       {% endif %}
-                       {{field}}
+
+
                        <label>{{field.label}}</label>
+
+
+                       {{field}}
                     </div>
                   {% endfor %}
 
