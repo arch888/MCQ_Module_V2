@@ -13,11 +13,11 @@
     <link href="{% static 'assets/css/mdb.min.css' %}" rel="stylesheet">
     <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet">
     <link href="{% static 'assets/css/dashboard.css' %}" rel="stylesheet">
-    <script type="text/javascript" src="{% static 'assets/js/dashboard.js' %}">
-      
-
-
-
+    <script type="text/javascript" src="{% static 'assets/js/dashboard.js' %}"></script>
+    <script type="text/javascript">
+      window.onbeforeunload = function() {
+        return "Dude, are you sure you want to refresh? Think of the kittens!";
+      }
 
     </script>
 
@@ -150,6 +150,7 @@ color: #FF1744;">1</button>
     }
   }
   setTimeout("Checktime()",1000);
+
 </script>
 
 <h6 style="float: right;">Please Do not Refresh any Page while in test</h6>
