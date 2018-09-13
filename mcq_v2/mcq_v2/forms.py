@@ -19,6 +19,8 @@ class signup_form(forms.Form):
 		qs=User.objects.filter(username=email)
 		if qs.exists():
 			raise forms.ValidationError("Email Taken !")
+		elif ("@" not in email) or (".com" not in email):
+			raise forms.ValidationError("Please Enter a Valid Email !")
 		return email
 
 
