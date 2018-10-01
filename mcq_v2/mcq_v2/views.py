@@ -116,103 +116,116 @@ def dashboard(request):
 		"question8":queryset[7],
 		"question9":queryset[8],
 		"question10":queryset[9],
-		"question11":queryset[0],
-		"question12":queryset[1],
-		"question13":queryset[2],
-		"question14":queryset[3],
-		"question15":queryset[4],
-		"question16":queryset[5],
-		"question17":queryset[6],
-		"question18":queryset[7],
-		"question19":queryset[8],
-		"question20":queryset[9],
+		"question11":queryset[10],
+		"question12":queryset[11],
+		"question13":queryset[12],
+		"question14":queryset[13],
+		"question15":queryset[14],
+		"question16":queryset[15],
+		"question17":queryset[16],
+		"question18":queryset[17],
+		"question19":queryset[18],
+		"question20":queryset[19],
+		"question21":queryset[20],
+		"question22":queryset[21],
+		"question23":queryset[22],
+		"question24":queryset[23],
+		"question25":queryset[24],
+		"question26":queryset[25],
+		"question27":queryset[26],
+		"question28":queryset[27],
+		"question29":queryset[28],
+		"question30":queryset[29],
 		"time":time
 	}
 
 	if request.POST:
 		count=0
 		attempted_qus=0
-		if request.POST.get('qus1')==str(queryset[0].correct_option):
-			count=count+1
-		if request.POST.get('qus2')==str(queryset[1].correct_option):
-			count=count+1
-		if request.POST.get('qus3')==str(queryset[2].correct_option):
-			count=count+1
-		if request.POST.get('qus4')==str(queryset[3].correct_option):
-			count=count+1
-		if request.POST.get('qus5')==str(queryset[4].correct_option):
-			count=count+1
-		if request.POST.get('qus6')==str(queryset[5].correct_option):
-			count=count+1
-		if request.POST.get('qus7')==str(queryset[6].correct_option):
-			count=count+1
-		if request.POST.get('qus8')==str(queryset[7].correct_option):
-			count=count+1
-		if request.POST.get('qus9')==str(queryset[8].correct_option):
-			count=count+1
-		if request.POST.get('qus10')==str(queryset[9].correct_option):
-			count=count+1
-		if request.POST.get('qus11')==str(queryset[0].correct_option):
-			count=count+1
-		if request.POST.get('qus12')==str(queryset[1].correct_option):
-			count=count+1
-		if request.POST.get('qus13')==str(queryset[2].correct_option):
-			count=count+1
-		if request.POST.get('qus14')==str(queryset[3].correct_option):
-			count=count+1
-		if request.POST.get('qus15')==str(queryset[4].correct_option):
-			count=count+1
-		if request.POST.get('qus16')==str(queryset[5].correct_option):
-			count=count+1
-		if request.POST.get('qus17')==str(queryset[6].correct_option):
-			count=count+1
-		if request.POST.get('qus18')==str(queryset[7].correct_option):
-			count=count+1
-		if request.POST.get('qus19')==str(queryset[8].correct_option):
-			count=count+1
-		if request.POST.get('qus20')==str(queryset[9].correct_option):
-			count=count+1
-		if request.POST.get('qus1')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus2')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus3')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus4')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus5')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus6')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus7')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus8')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus9')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus10')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus11')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus12')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus13')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus14')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus15')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus16')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus17')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus18')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus19')==None:
-			attempted_qus=attempted_qus+1
-		if request.POST.get('qus20')==None:
-			attempted_qus=attempted_qus+1
-		attempted_qus=20 - attempted_qus
+		for jk in range(1,31):		
+			if request.POST.get(str(queryset[jk].qus_id))==str(queryset[jk].correct_option):
+				count=count+1		
+			if request.POST.get(str(queryset[jk].qus_id))==None:
+				attempted_qus=attempted_qus+1
+		# if request.POST.get('qus2')==str(queryset[1].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus3')==str(queryset[2].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus4')==str(queryset[3].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus5')==str(queryset[4].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus6')==str(queryset[5].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus7')==str(queryset[6].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus8')==str(queryset[7].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus9')==str(queryset[8].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus10')==str(queryset[9].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus11')==str(queryset[0].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus12')==str(queryset[1].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus13')==str(queryset[2].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus14')==str(queryset[3].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus15')==str(queryset[4].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus16')==str(queryset[5].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus17')==str(queryset[6].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus18')==str(queryset[7].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus19')==str(queryset[8].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus20')==str(queryset[9].correct_option):
+		# 	count=count+1
+		# if request.POST.get('qus1')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus2')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus3')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus4')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus5')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus6')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus7')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus8')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus9')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus10')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus11')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus12')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus13')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus14')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus15')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus16')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus17')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus18')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus19')==None:
+		# 	attempted_qus=attempted_qus+1
+		# if request.POST.get('qus20')==None:
+		# 	attempted_qus=attempted_qus+1
+		attempted_qus=30 - attempted_qus
 		correct_qus=count
 		wrong_qus=attempted_qus-count
 		points=(count*4)-(wrong_qus)

@@ -15,7 +15,7 @@ class profile(models.Model):
 	year=models.IntegerField()
 	branch=models.CharField(max_length=255)
 	start_time=models.IntegerField(default=0)
-
+	rem_time=models.IntegerField(default=1800)
 
 
 	def __str__(self):

@@ -6,6 +6,7 @@ from django.db import models
 
 
 class question(models.Model):
+	qus_id=models.IntegerField(unique=True)
 	title=models.CharField(max_length=255)
 	desc=models.TextField()
 	option_1=models.CharField(max_length=255)
