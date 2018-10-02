@@ -103,7 +103,7 @@ def leaderboard(request):
 def dashboard(request):
 	quiz_object=quizze.objects.filter(title='Recruitment Drive').first()
 	queryset=list(quiz_object.ques.all())
-	#shuffle(queryset)
+	shuffle(queryset)
 	time=quiz_object.time
 	context={
 		"question1":queryset[0],
@@ -142,7 +142,7 @@ def dashboard(request):
 	if request.POST:
 		count=0
 		attempted_qus=0
-		for jk in range(1,31):		
+		for jk in range(30):		
 			if request.POST.get(str(queryset[jk].qus_id))==str(queryset[jk].correct_option):
 				count=count+1		
 			if request.POST.get(str(queryset[jk].qus_id))==None:
