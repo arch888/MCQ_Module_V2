@@ -1,2 +1,2 @@
 - Anurag Sachdeva (anuragsachdeva28)
-- Archit Kumar Diwedi
+- Archit Kumar Dwevedi (arch888)
