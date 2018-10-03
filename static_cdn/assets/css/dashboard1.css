@@ -1,0 +1,589 @@
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 30px;
+  outline: 1px solid slategrey;
+}
+body{
+  font-family: 'Quicksand',sans-serif;
+  overflow-x: hidden; 
+}
+.navbar-brand>img {
+    display: block;
+    width: 3rem;
+    margin-top: 0.25rem;
+    margin-left: 0rem;
+}
+p#head {
+    margin-top: -2.5rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+.row.parent_row{
+   margin-top: 6rem;
+}
+#border {
+    border: 3px solid grey;
+}
+button#oneD,
+button#b1,
+button#b2,
+button#b3,
+button#b4,
+button#b5,
+button#b6,
+button#b7,
+button#b8,
+button#b9,
+button#b10{
+  padding: 1rem 1.7rem;
+  margin: 0.5rem 0.5rem;
+  border: 1.5px solid #616161;
+  outline: none;
+  background-color: transparent;
+  border-radius: 50%;
+}
+button#twoD,
+button#b11,
+button#b12,
+button#b13,
+button#b14,
+button#b15,
+button#b16,
+button#b17,
+button#b18,
+button#b19,
+button#b20,
+button#b21,
+button#b22,
+button#b23,
+button#b24,
+button#b25,
+button#b26,
+button#b27,
+button#b28,
+button#b29,
+button#b30{
+  padding: 1rem 1.4rem;
+  outline: none;
+  margin: 0.5rem 0.5rem;
+  border: 1.5px solid #616161;
+  background-color: transparent;
+  border-radius: 50%;
+}
+button#oneD:hover,
+button#oneD:focus,
+button#b1:hover,
+button#b1:focus,
+button#b2:hover,
+button#b2:focus,
+button#b3:hover,
+button#b3:focus,
+button#b4:hover,
+button#b4:focus,
+button#b5:hover,
+button#b5:focus,
+button#b6:hover,
+button#b6:focus,
+button#b7:hover,
+button#b7:focus,
+button#b8:hover,
+button#b8:focus,
+button#b9:hover,
+button#b9:focus,
+button#b10:hover,
+button#b10:focus,
+button#b11:hover,
+button#b11:focus,
+button#b12:hover,
+button#b12:focus,
+button#b13:hover,
+button#b13:focus,
+button#b14:hover,
+button#b14:focus,
+button#b15:hover,
+button#b15:focus,
+button#b16:hover,
+button#b16:focus,
+button#b17:hover,
+button#b17:focus,
+button#b18:hover,
+button#b18:focus,
+button#b19:hover,
+button#b19:focus,
+button#b20:hover,
+button#b20:focus,
+button#b21:hover,
+button#b21:focus,
+button#b22:hover,
+button#b22:focus,
+button#b23:hover,
+button#b23:focus,
+button#b24:hover,
+button#b24:focus,
+button#b25:hover,
+button#b25:focus,
+button#b26:hover,
+button#b26:focus,
+button#b27:hover,
+button#b27:focus,
+button#b28:hover,
+button#b28:focus,
+button#b29:hover,
+button#b29:focus,
+button#b30:hover,
+button#b30:focus{
+   border: 1.5px solid #FF1744;
+   color: #FF1744;
+}
+.col-lg-9{
+  padding: 1rem;
+}
+.next{
+  float: right;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  font-size: 15px;
+  margin-top: 5rem;
+  border: 2px solid grey;
+  border-radius: 6px;
+  text-decoration: none;
+  color: grey;
+  outline: none;
+  font-weight: bold;
+}
+.next:hover,.next:focus{
+  outline: none;
+  text-decoration: none;
+  color:  #D50000;
+  border: 2px solid  #D50000;
+}
+h3{
+   font-weight: bold;
+   color: #263238;
+}
+p{
+  color: #616161;
+}
+hr{
+  color: #D50000;
+  background-color: #D50000;
+  width: 100%;
+  height: 3px;
+  margin-right: auto;
+  margin-left: auto;
+  border: none; 
+  border-radius: 10px;  
+}
+ul#listOptions,
+ul#listOptions1,
+ul#listOptions2,
+ul#listOptions3,
+ul#listOptions4,
+ul#listOptions5,
+ul#listOptions6,
+ul#listOptions7,
+ul#listOptions8,
+ul#listOptions9,
+ul#listOptions10,
+ul#listOptions11,
+ul#listOptions12,
+ul#listOptions13,
+ul#listOptions14,
+ul#listOptions15,
+ul#listOptions16,
+ul#listOptions17,
+ul#listOptions18,
+ul#listOptions19,
+ul#listOptions20,
+ul#listOptions21,
+ul#listOptions22,
+ul#listOptions23,
+ul#listOptions24,
+ul#listOptions25,
+ul#listOptions26,
+ul#listOptions27,
+ul#listOptions28,
+ul#listOptions29,
+ul#listOptions30{
+  margin-top: -2rem;
+  margin-left: -2rem;
+}
+ul#listOptions li#option,
+ul#listOptions1 li#option,
+ul#listOptions2 li#option,
+ul#listOptions3 li#option,
+ul#listOptions4 li#option,
+ul#listOptions5 li#option,
+ul#listOptions6 li#option,
+ul#listOptions7 li#option,
+ul#listOptions8 li#option,
+ul#listOptions9 li#option,
+ul#listOptions10 li#option,
+ul#listOptions11 li#option,
+ul#listOptions12 li#option,
+ul#listOptions13 li#option,
+ul#listOptions14 li#option,
+ul#listOptions15 li#option,
+ul#listOptions16 li#option,
+ul#listOptions17 li#option,
+ul#listOptions18 li#option,
+ul#listOptions19 li#option,
+ul#listOptions20 li#option,
+ul#listOptions21 li#option,
+ul#listOptions22 li#option,
+ul#listOptions23 li#option,
+ul#listOptions24 li#option,
+ul#listOptions25 li#option,
+ul#listOptions26 li#option,
+ul#listOptions27 li#option,
+ul#listOptions28 li#option,
+ul#listOptions29 li#option,
+ul#listOptions30 li#option{
+  color: grey;
+  display: block;
+  position: relative;
+  letter-spacing: 0.5px;
+  float: left;
+  width: 100%;
+  height: 50px;
+}
+ul#listOptions li#option input[type=radio],
+ul#listOptions1 li#option input[type=radio],
+ul#listOptions2 li#option input[type=radio],
+ul#listOptions3 li#option input[type=radio],
+ul#listOptions4 li#option input[type=radio],
+ul#listOptions5 li#option input[type=radio],
+ul#listOptions6 li#option input[type=radio],
+ul#listOptions7 li#option input[type=radio],
+ul#listOptions8 li#option input[type=radio],
+ul#listOptions9 li#option input[type=radio],
+ul#listOptions10 li#option input[type=radio],
+ul#listOptions11 li#option input[type=radio],
+ul#listOptions12 li#option input[type=radio],
+ul#listOptions13 li#option input[type=radio],
+ul#listOptions14 li#option input[type=radio],
+ul#listOptions15 li#option input[type=radio],
+ul#listOptions16 li#option input[type=radio],
+ul#listOptions17 li#option input[type=radio],
+ul#listOptions18 li#option input[type=radio],
+ul#listOptions19 li#option input[type=radio],
+ul#listOptions20 li#option input[type=radio],
+ul#listOptions21 li#option input[type=radio],
+ul#listOptions22 li#option input[type=radio],
+ul#listOptions23 li#option input[type=radio],
+ul#listOptions24 li#option input[type=radio],
+ul#listOptions25 li#option input[type=radio],
+ul#listOptions26 li#option input[type=radio],
+ul#listOptions27 li#option input[type=radio],
+ul#listOptions28 li#option input[type=radio],
+ul#listOptions29 li#option input[type=radio],
+ul#listOptions30 li#option input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+ul#listOptions li#option label,
+ul#listOptions1 li#option label,
+ul#listOptions2 li#option label,
+ul#listOptions3 li#option label,
+ul#listOptions4 li#option label,
+ul#listOptions5 li#option label,
+ul#listOptions6 li#option label,
+ul#listOptions7 li#option label,
+ul#listOptions8 li#option label,
+ul#listOptions9 li#option label,
+ul#listOptions10 li#option label,
+ul#listOptions11 li#option label,
+ul#listOptions12 li#option label,
+ul#listOptions13 li#option label,
+ul#listOptions14 li#option label,
+ul#listOptions15 li#option label,
+ul#listOptions16 li#option label,
+ul#listOptions17 li#option label,
+ul#listOptions18 li#option label,
+ul#listOptions19 li#option label,
+ul#listOptions20 li#option label,
+ul#listOptions21 li#option label,
+ul#listOptions22 li#option label,
+ul#listOptions23 li#option label,
+ul#listOptions24 li#option label,
+ul#listOptions25 li#option label,
+ul#listOptions26 li#option label,
+ul#listOptions27 li#option label,
+ul#listOptions28 li#option label,
+ul#listOptions29 li#option label,
+ul#listOptions30 li#option label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  padding: 25px 25px 25px 80px;
+  margin: 6px -20px;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+ul#listOptions li#option:hover label,
+ul#listOptions1 li#option:hover label,
+ul#listOptions2 li#option:hover label,
+ul#listOptions3 li#option:hover label,
+ul#listOptions4 li#option:hover label,
+ul#listOptions5 li#option:hover label,
+ul#listOptions6 li#option:hover label,
+ul#listOptions7 li#option:hover label,
+ul#listOptions8 li#option:hover label,
+ul#listOptions9 li#option:hover label,
+ul#listOptions10 li#option:hover label,
+ul#listOptions11 li#option:hover label,
+ul#listOptions12 li#option:hover label,
+ul#listOptions13 li#option:hover label,
+ul#listOptions14 li#option:hover label,
+ul#listOptions15 li#option:hover label,
+ul#listOptions16 li#option:hover label,
+ul#listOptions17 li#option:hover label,
+ul#listOptions18 li#option:hover label,
+ul#listOptions19 li#option:hover label,
+ul#listOptions20 li#option:hover label,
+ul#listOptions21 li#option:hover label,
+ul#listOptions22 li#option:hover label,
+ul#listOptions23 li#option:hover label,
+ul#listOptions24 li#option:hover label,
+ul#listOptions25 li#option:hover label,
+ul#listOptions26 li#option:hover label,
+ul#listOptions27 li#option:hover label,
+ul#listOptions28 li#option:hover label,
+ul#listOptions29 li#option:hover label,
+ul#listOptions30 li#option:hover label{
+  color:  #D50000;
+}
+ul#listOptions li#option .check,
+ul#listOptions1 li#option .check,
+ul#listOptions2 li#option .check,
+ul#listOptions3 li#option .check,
+ul#listOptions4 li#option .check,
+ul#listOptions5 li#option .check,
+ul#listOptions6 li#option .check,
+ul#listOptions7 li#option .check,
+ul#listOptions8 li#option .check,
+ul#listOptions9 li#option .check,
+ul#listOptions10 li#option .check,
+ul#listOptions11 li#option .check,
+ul#listOptions12 li#option .check,
+ul#listOptions13 li#option .check,
+ul#listOptions14 li#option .check,
+ul#listOptions15 li#option .check,
+ul#listOptions16 li#option .check,
+ul#listOptions17 li#option .check,
+ul#listOptions18 li#option .check,
+ul#listOptions19 li#option .check,
+ul#listOptions20 li#option .check,
+ul#listOptions21 li#option .check,
+ul#listOptions22 li#option .check,
+ul#listOptions23 li#option .check,
+ul#listOptions24 li#option .check,
+ul#listOptions25 li#option .check,
+ul#listOptions26 li#option .check,
+ul#listOptions27 li#option .check,
+ul#listOptions28 li#option .check,
+ul#listOptions29 li#option .check,
+ul#listOptions30 li#option .check{
+  display: block;
+  position: absolute;
+  border: 4px solid grey;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 30px;
+  left: 20px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+ul#listOptions li#option:hover .check,
+ul#listOptions1 li#option:hover .check,
+ul#listOptions2 li#option:hover .check,
+ul#listOptions3 li#option:hover .check,
+ul#listOptions4 li#option:hover .check,
+ul#listOptions5 li#option:hover .check,
+ul#listOptions6 li#option:hover .check,
+ul#listOptions7 li#option:hover .check,
+ul#listOptions8 li#option:hover .check,
+ul#listOptions9 li#option:hover .check,
+ul#listOptions10 li#option:hover .check,
+ul#listOptions11 li#option:hover .check,
+ul#listOptions12 li#option:hover .check,
+ul#listOptions13 li#option:hover .check,
+ul#listOptions14 li#option:hover .check,
+ul#listOptions15 li#option:hover .check,
+ul#listOptions16 li#option:hover .check,
+ul#listOptions17 li#option:hover .check,
+ul#listOptions18 li#option:hover .check,
+ul#listOptions19 li#option:hover .check,
+ul#listOptions20 li#option:hover .check,
+ul#listOptions21 li#option:hover .check,
+ul#listOptions22 li#option:hover .check,
+ul#listOptions23 li#option:hover .check,
+ul#listOptions24 li#option:hover .check,
+ul#listOptions25 li#option:hover .check,
+ul#listOptions26 li#option:hover .check,
+ul#listOptions27 li#option:hover .check,
+ul#listOptions28 li#option:hover .check,
+ul#listOptions29 li#option:hover .check,
+ul#listOptions30 li#option:hover .check {
+  border: 4px solid  #D50000;
+}
+ul#listOptions1 li#option .check::before,
+ul#listOptions2 li#option .check::before,
+ul#listOptions3 li#option .check::before,
+ul#listOptions4 li#option .check::before,
+ul#listOptions5 li#option .check::before,
+ul#listOptions6 li#option .check::before,
+ul#listOptions7 li#option .check::before,
+ul#listOptions8 li#option .check::before,
+ul#listOptions9 li#option .check::before,
+ul#listOptions10 li#option .check::before,
+ul#listOptions11 li#option .check::before,
+ul#listOptions12 li#option .check::before,
+ul#listOptions13 li#option .check::before,
+ul#listOptions14 li#option .check::before,
+ul#listOptions15 li#option .check::before,
+ul#listOptions16 li#option .check::before,
+ul#listOptions17 li#option .check::before,
+ul#listOptions18 li#option .check::before,
+ul#listOptions19 li#option .check::before,
+ul#listOptions20 li#option .check::before,
+ul#listOptions21 li#option .check::before,
+ul#listOptions22 li#option .check::before,
+ul#listOptions23 li#option .check::before,
+ul#listOptions24 li#option .check::before,
+ul#listOptions25 li#option .check::before,
+ul#listOptions26 li#option .check::before,
+ul#listOptions27 li#option .check::before,
+ul#listOptions28 li#option .check::before,
+ul#listOptions29 li#option .check::before,
+ul#listOptions30 li#option .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 13px;
+  width: 13px;
+  top: 2px;
+  left: 2px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #FF5252;
+}
+
+input[type=radio]:checked ~ label{
+  color: grey;
+}
+footer.page-footer{
+  margin-top: 6rem;
+}
+@media (max-width: 320px){
+ button#oneD{
+   margin: 0.5rem 0.5rem;
+   padding: 1rem 1.5rem;
+ }
+ button#twoD{
+   margin: 0.5rem 0.5rem;
+   padding: 1rem 1.2rem;
+ }
+ .row.parent_row{
+   margin-top: 4rem;
+ }
+ h3{
+   margin-top: 4rem;
+ }
+}
+@media(max-width: 375px) and (min-width: 360px){
+  button#oneD,button#twoD{
+    margin: 0.5rem 0.6rem;
+  }
+  .row.parent_row{
+   margin-top: 4rem;
+ }
+  h3{
+   margin-top: 4rem;
+ }
+}
+@media(max-width: 425px) and (min-width: 410px){
+  button#oneD,button#twoD{
+    margin: 0.5rem 1.1rem;
+  }
+  .row.parent_row{
+   margin-top: 4rem;
+ }
+  h3{
+   margin-top: 4rem;
+ }
+}
+@media(max-width: 768px) and (min-width: 700px){
+  button#oneD{
+    padding: 0.5rem 1.2rem;
+    margin: 0.5rem 0.3rem;
+  }
+  button#twoD{
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.3rem;
+  }
+  .row.parent_row{
+   margin-top: 4rem;
+ }
+
+}
+@media(max-width: 1024px) and (min-width: 999px){
+  button#oneD{
+    padding: 0.4rem 1rem;
+    margin: 0.5rem 0.3rem;
+  }
+  button#twoD{
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem 0.3rem;
+  }
+  .row.parent_row{
+   margin-top: 4rem;
+ }
+}
+@media(max-width: 1280px) and (min-width: 1200px){
+  button#oneD{
+    margin: 0.5rem 0.4rem;
+    padding: 1rem 1.5rem;
+  }
+  button#twoD{
+    padding: 1rem 1.2rem;
+    margin: 0.5rem 0.5rem;
+  }
+}
+@media(max-width: 1440px) and (min-width: 1400px){
+  button#oneD,button#twoD{
+    margin: 0.5rem 0.5rem;
+  }
+}
+@media(max-width: 1680px) and (min-width: 1550px){
+  footer.page-footer{
+    margin-top: 6rem;
+  }
+  button#oneD{
+    margin: 0.5rem 1.1rem;
+  }
+  button#twoD{
+    margin: 0.5rem 1.2rem;
+  }
+}
