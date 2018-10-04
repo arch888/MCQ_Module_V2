@@ -18,5 +18,10 @@
 
 .multiple{
 	margin-top: 5px;
-	margin-left: 100px;
+	margin-left: 200px;
+	width: 300px;
+	background-color: rgba(255,255,255,0);
+	margin-bottom: 20px;
+	border: none;
+	height: 40px;
 }
