@@ -31,6 +31,7 @@
             <a href="http://jssmmil.in/" class="navbar-brand" title="MMIL website"><img src="{% static 'assets/img/logo.png' %}">
                 <p id="head">MMIL</p>
             </a>
+            {% if user.is_authenticated %}
             <ul class="nav navbar-nav nav-flex-icons ml-auto">
                 <li class="nav-item">
                     <a href="/logout" class="nav-link">
@@ -39,8 +40,22 @@
                     </a>
                 </li>
             </ul>
+            {% else %}
+              <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a href="/login" class="nav-link">
+                        <i class="fa fa-sign-out"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Login</span>
+                    </a>
+                </li>
+            </ul>
+            {% endif %}
         </nav>
     </header>
+
+
+
+{% if user.is_authenticated %}
 <main class="container-fluid">
   <div class="row parent_row">
      <div class="col-lg-3 col-md-3 col-12">
@@ -1706,6 +1721,35 @@ color: #FF1744;">1</button>
   </div>
 
     </main>
+
+
+    {% else %}
+
+
+
+
+        <main class="container animated fadeIn">
+      <div class="row">
+        <div class="col-lg-2 col-md-2"></div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+           <div class="jumbotron">
+              <h1 class="h1-responsive" align="center">QUIZICON</h1>
+              <hr>
+              <!-- <div class="button-group"> -->
+                <p align="center">
+                    You are not Logged in. Please Login <a href="/login">Click here</a>
+                </p><br>
+
+
+<!--               <p id="instruction" align="center">LogIn/SignUp before starting the test.</p> -->
+           </div>
+        </div>
+      </div>
+    </main>
+
+
+
+    {% endif %}
     <footer class="page-footer elegant-color center-on-small-only">
         <div class="footer-copyright">
             <div class="container-fluid">

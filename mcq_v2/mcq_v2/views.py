@@ -251,10 +251,11 @@ def dashboard(request):
 			return redirect('/result')
 		else:
 			return redirect('/')
-	if request.user.profile_set.all().first().start_time==0:
-		obj=profile.objects.get(user=request.user)
-		obj.start_time=1
-		obj.save()
+	if request.user.is_authenticated:
+		if request.user.profile_set.all().first().start_time==0:
+			obj=profile.objects.get(user=request.user)
+			obj.start_time=1
+			obj.save()
 	else:
 		if request.user.is_authenticated:
 			logout(request)
@@ -264,14 +265,17 @@ def dashboard(request):
 
 
 def result(request):
-	obj=lb.objects.filter(user=request.user)
-	if obj.exists():
-		context_2={
-			"cqus":obj.first().correct_qus,
-			"wqus":obj.first().wrong_qus,
-			"points":obj.first().points,
-			"message":obj.first().message
-		}
 	if request.user.is_authenticated:
+		obj=lb.objects.filter(user=request.user)
+		if obj.exists():
+			context_2={
+				"cqus":obj.first().correct_qus,
+				"wqus":obj.first().wrong_qus,
+				"points":obj.first().points,
+				"message":obj.first().message
+			}
+		
 		logout(request)
+	else:
+		context_2={}
 	return render(request,'test/result.html',context_2)
