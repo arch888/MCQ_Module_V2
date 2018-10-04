@@ -12,3 +12,11 @@
 .md-form input[type=text]:focus:not([readonly]) + label,.md-form input[type=password]:focus:not([readonly]) + label{
 	font-weight: bold;
 }  
+
+
+
+
+.multiple{
+	margin-top: 5px;
+	margin-left: 100px;
+}

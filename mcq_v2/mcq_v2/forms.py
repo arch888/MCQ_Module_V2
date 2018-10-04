@@ -2,11 +2,18 @@ from django import forms
 from django.contrib.auth import get_user_model
 User=get_user_model()
 
-
+CHOICES= [
+    ('CS', 'Computer Science'),
+    ('IT', 'Information Technology'),
+    ('Civil', 'Civil'),
+    ('Mechanical', 'Mechanical'),
+    ('EC', 'Electronics & Communication'),
+    ]
 
 class signup_form(forms.Form):
 	name=forms.CharField(widget=forms.TextInput(attrs={"class":"form-control","id":"defaultForm-name"}))
-	branch=forms.CharField(widget=forms.TextInput(attrs={"class":"form-control","id":"defaultForm-branch"}))
+	branch=forms.CharField(widget=forms.Select(choices=CHOICES,attrs={"class":"multiple","id":"defaultForm-college"}))
+	#branch=forms.CharField(widget=forms.TextInput(attrs={"class":"form-control","id":"defaultForm-branch"}))
 	year=forms.DecimalField(max_value=3,min_value=1,widget=forms.NumberInput(attrs={"class":"form-control","id":"defaultForm-year"}))
 	college=forms.CharField(widget=forms.TextInput(attrs={"class":"form-control","id":"defaultForm-college"}))
 	email=forms.CharField(widget=forms.TextInput(attrs={"class":"form-control","id":"defaultForm-email"}))
