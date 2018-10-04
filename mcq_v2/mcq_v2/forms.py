@@ -10,7 +10,7 @@ class signup_form(forms.Form):
 	year=forms.DecimalField(max_value=3,min_value=1,widget=forms.NumberInput(attrs={"class":"form-control","id":"defaultForm-year"}))
 	college=forms.CharField(widget=forms.TextInput(attrs={"class":"form-control","id":"defaultForm-college"}))
 	email=forms.CharField(widget=forms.TextInput(attrs={"class":"form-control","id":"defaultForm-email"}))
-	password=forms.CharField(widget=forms.PasswordInput(attrs={"class":"form-control","id":"defaultForm-password"}))
+	password=forms.CharField(min_length=8,widget=forms.PasswordInput(attrs={"class":"form-control","id":"defaultForm-password"}))
 	confirm_password=forms.CharField(widget=forms.PasswordInput(attrs={"class":"form-control","id":"defaultForm-confirm_pass"}))
 
 
