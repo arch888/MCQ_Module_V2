@@ -80,7 +80,10 @@ def signup(request):
 
 
 def instruction(request):
-	return render(request,'index/instruction.html',{})
+	if request.user.profile_set.all().first().start_time==0:
+		return render(request,'index/instruction.html',{})
+	else:
+		return render(request,'test/rule_broken.html',{});
 
 
 
@@ -147,84 +150,6 @@ def dashboard(request):
 				count=count+1		
 			if request.POST.get(str(queryset[jk].qus_id))==None:
 				attempted_qus=attempted_qus+1
-		# if request.POST.get('qus2')==str(queryset[1].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus3')==str(queryset[2].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus4')==str(queryset[3].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus5')==str(queryset[4].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus6')==str(queryset[5].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus7')==str(queryset[6].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus8')==str(queryset[7].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus9')==str(queryset[8].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus10')==str(queryset[9].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus11')==str(queryset[0].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus12')==str(queryset[1].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus13')==str(queryset[2].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus14')==str(queryset[3].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus15')==str(queryset[4].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus16')==str(queryset[5].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus17')==str(queryset[6].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus18')==str(queryset[7].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus19')==str(queryset[8].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus20')==str(queryset[9].correct_option):
-		# 	count=count+1
-		# if request.POST.get('qus1')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus2')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus3')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus4')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus5')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus6')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus7')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus8')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus9')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus10')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus11')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus12')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus13')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus14')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus15')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus16')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus17')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus18')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus19')==None:
-		# 	attempted_qus=attempted_qus+1
-		# if request.POST.get('qus20')==None:
-		# 	attempted_qus=attempted_qus+1
 		attempted_qus=30 - attempted_qus
 		correct_qus=count
 		wrong_qus=attempted_qus-count
@@ -256,10 +181,10 @@ def dashboard(request):
 			obj=profile.objects.get(user=request.user)
 			obj.start_time=1
 			obj.save()
-	else:
-		if request.user.is_authenticated:
-			logout(request)
-		return render(request,'test/rule_broken.html',{});
+		else:
+			if request.user.is_authenticated:
+				logout(request)
+			return render(request,'test/rule_broken.html',{});
 	return render(request,'test/dashboard.html',context)
 
 
