@@ -148,11 +148,11 @@ button#b30:focus{
   padding: 1rem;
 }
 .next{
-  float: right;
   background-color: transparent;
   padding: 1rem 2rem;
   font-size: 15px;
   margin-top: 5rem;
+
   border: 2px solid grey;
   border-radius: 6px;
   text-decoration: none;
@@ -586,4 +586,10 @@ footer.page-footer{
   button#twoD{
     margin: 0.5rem 1.2rem;
   }
+}
+
+
+
+.end_test{
+  margin-left: 750px;
 }
