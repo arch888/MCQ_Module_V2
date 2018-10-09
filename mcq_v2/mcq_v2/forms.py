@@ -8,6 +8,9 @@ CHOICES= [
     ('Civil', 'Civil'),
     ('Mechanical', 'Mechanical'),
     ('EC', 'Electronics & Communication'),
+    ('EEE', 'Electrical & Electronics Engg.'),
+    ('EE', 'Electrical Engg.'),
+    ('IC', 'Instrumentation & Control Engg.'),
     ]
 
 class signup_form(forms.Form):

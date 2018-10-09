@@ -83,6 +83,8 @@ def instruction(request):
 	if request.user.profile_set.all().first().start_time==0:
 		return render(request,'index/instruction.html',{})
 	else:
+		if request.user.is_authenticated:
+			logout(request)
 		return render(request,'test/rule_broken.html',{});
 
 
@@ -153,13 +155,13 @@ def dashboard(request):
 		attempted_qus=30 - attempted_qus
 		correct_qus=count
 		wrong_qus=attempted_qus-count
-		points=(count*4)-(wrong_qus)
+		points=(count*4)
 		object_1=lb.objects.filter(user=request.user)
-		if points<=20:
+		if points<=40:
 			message="Congrats You have Done well !!"
-		elif points>20 and points<=30:
+		elif points>40 and points<=60:
 			message="Congrats You have Done Pretty well !!"
-		elif points>30 and points<=40:
+		elif points>60 and points<=80:
 			message="Congrats You have Done your Best !!"
 		else:
 			message="Congrats You Rocked !!"
