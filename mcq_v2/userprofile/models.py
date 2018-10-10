@@ -16,6 +16,7 @@ class profile(models.Model):
 	branch=models.CharField(max_length=255)
 	start_time=models.IntegerField(default=0)
 	rem_time=models.IntegerField(default=1800)
+	contact=models.IntegerField(null=True,blank=True);
 
 
 	def __str__(self):

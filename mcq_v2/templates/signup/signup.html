@@ -62,16 +62,19 @@
                       {% endif %}
 
 
-
+<!-- 
                       {% if form.errors %}
                         <script type="text/javascript">
                           alert("{{error}}");
                         </script>
-                      {% endif %}
+                      {% endif %} -->
 
                   {% for field in form %}
                     <div class="md-form">
                       {% if field.label in 'Name' %}
+                       <i class="fa fa-user prefix grey-text"></i>
+                      {% endif %}
+                      {% if field.label in 'Contact' %}
                        <i class="fa fa-user prefix grey-text"></i>
                       {% endif %}
                       {% if field.label in 'Branch' %}

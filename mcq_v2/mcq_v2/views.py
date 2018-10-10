@@ -64,13 +64,15 @@ def signup(request):
 		year=form_class.cleaned_data.get("year")
 		branch=form_class.cleaned_data.get("branch")
 		password=form_class.cleaned_data.get("password")
+		contact=form_class.cleaned_data.get("contact")
 		new_user= User.objects.create_user(email,email,password)
 		user_profile=profile(
 				user=new_user,
 				name=name,
 				college=college,
 				year=year,
-				branch=branch
+				branch=branch,
+				contact=contact,
 			)
 		user_profile.save()
 		if new_user is not None:

@@ -17,11 +17,13 @@ class signup_form(forms.Form):
 	name=forms.CharField(widget=forms.TextInput(attrs={"class":"form-control","id":"defaultForm-name"}))
 	branch=forms.CharField(widget=forms.Select(choices=CHOICES,attrs={"class":"multiple","id":"defaultForm-college"}))
 	#branch=forms.CharField(widget=forms.TextInput(attrs={"class":"form-control","id":"defaultForm-branch"}))
+	contact=forms.DecimalField(widget=forms.NumberInput(attrs={"class":"form-control","id":"defaultForm-year"}))
 	year=forms.DecimalField(max_value=3,min_value=1,widget=forms.NumberInput(attrs={"class":"form-control","id":"defaultForm-year"}))
 	college=forms.CharField(widget=forms.TextInput(attrs={"class":"form-control","id":"defaultForm-college"}))
 	email=forms.EmailField(widget=forms.EmailInput(attrs={"class":"form-control","id":"defaultForm-email"}))
 	password=forms.CharField(min_length=8,widget=forms.PasswordInput(attrs={"class":"form-control","id":"defaultForm-password"}))
 	confirm_password=forms.CharField(widget=forms.PasswordInput(attrs={"class":"form-control","id":"defaultForm-confirm_pass"}))
+
 
 
 	def clean_email(self):
